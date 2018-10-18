@@ -2,16 +2,15 @@ var Letter = require("./letter.js");
 
 function Word(string) {
   this.secretWord = string;
-  this.arrayOfLetters = function() {
-    var { secretWord } = this;
-    var arrayOfLetters = [];
+  this.letterArray = [];
+  this.createArrayOfLetters = function() {
+    var { secretWord, letterArray } = this;
     secretWord.split("").forEach(function(letter) {
       var x = new Letter(letter);
-      arrayOfLetters.push(x);
+      letterArray.push(x);
     });
-
-    return arrayOfLetters;
+    return;
   };
 }
 
-module.exports = new Word();
+module.exports = Word;
