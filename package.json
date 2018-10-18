@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alexszeliga/node-word-guess/issues"
   },
-  "homepage": "https://github.com/alexszeliga/node-word-guess#readme"
+  "homepage": "https://github.com/alexszeliga/node-word-guess#readme",
+  "dependencies": {
+    "inquirer": "^6.2.0"
+  }
 }
